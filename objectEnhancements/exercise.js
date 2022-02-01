@@ -5,11 +5,11 @@
 //     }
 //   }
 
-function createInstructor(firstName, lastName){
-    return {
-        firstName,
-        lastName
-    }
+function createInstructor(firstName, lastName) {
+  return {
+    firstName,
+    lastName,
+  };
 }
 
 // var favoriteNumber = 42;
@@ -23,9 +23,9 @@ function createInstructor(firstName, lastName){
 const favoriteNumber = 42;
 
 const instructor = {
-    firstName: 'Colt',
-    [favoriteNumber]: 'That is my favorite!'
-}
+  firstName: "Colt",
+  [favoriteNumber]: "That is my favorite!",
+};
 
 // var instructor = {
 //     firstName: "Colt",
@@ -38,14 +38,14 @@ const instructor = {
 //   }
 
 const instructor1 = {
-    firstName: "Colt",
-    sayHi(){
-      return "Hi!";
-    },
-    sayBye(){
-      return this.firstName + " says bye!";
-    }
-  }
+  firstName: "Colt",
+  sayHi() {
+    return "Hi!";
+  },
+  sayBye() {
+    return this.firstName + " says bye!";
+  },
+};
 
 //   Write a function which generates an animal object. The function should accepts 3 arguments:
 
@@ -55,7 +55,9 @@ const instructor1 = {
 //   Use one or more of the object enhancements we’ve covered.
 
 const createAnimal = (species, verb, noise) => ({
-    species,
-    [verb](){return noise}, 
-    noise
-})
+  species,
+  [verb]() {
+    return noise;
+  },
+  noise,
+});
